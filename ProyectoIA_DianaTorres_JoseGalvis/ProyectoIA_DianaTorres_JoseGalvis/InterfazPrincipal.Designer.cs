@@ -31,8 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.comboApodo = new System.Windows.Forms.ComboBox();
-            this.btn_1pila = new System.Windows.Forms.RadioButton();
-            this.btn_npilas = new System.Windows.Forms.RadioButton();
             this.btnAyuda = new System.Windows.Forms.Button();
             this.btnInfoNim = new System.Windows.Forms.Button();
             this.btnEmpezar = new System.Windows.Forms.Button();
@@ -65,30 +63,6 @@
             this.comboApodo.Name = "comboApodo";
             this.comboApodo.Size = new System.Drawing.Size(185, 24);
             this.comboApodo.TabIndex = 2;
-            // 
-            // btn_1pila
-            // 
-            this.btn_1pila.AutoSize = true;
-            this.btn_1pila.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_1pila.Location = new System.Drawing.Point(268, 269);
-            this.btn_1pila.Name = "btn_1pila";
-            this.btn_1pila.Size = new System.Drawing.Size(85, 28);
-            this.btn_1pila.TabIndex = 3;
-            this.btn_1pila.TabStop = true;
-            this.btn_1pila.Text = "1 PILA";
-            this.btn_1pila.UseVisualStyleBackColor = true;
-            // 
-            // btn_npilas
-            // 
-            this.btn_npilas.AutoSize = true;
-            this.btn_npilas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_npilas.Location = new System.Drawing.Point(375, 269);
-            this.btn_npilas.Name = "btn_npilas";
-            this.btn_npilas.Size = new System.Drawing.Size(101, 28);
-            this.btn_npilas.TabIndex = 4;
-            this.btn_npilas.TabStop = true;
-            this.btn_npilas.Text = "N PILAS";
-            this.btn_npilas.UseVisualStyleBackColor = true;
             // 
             // btnAyuda
             // 
@@ -130,8 +104,6 @@
             this.Controls.Add(this.btnEmpezar);
             this.Controls.Add(this.btnInfoNim);
             this.Controls.Add(this.btnAyuda);
-            this.Controls.Add(this.btn_npilas);
-            this.Controls.Add(this.btn_1pila);
             this.Controls.Add(this.comboApodo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -147,8 +119,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox comboApodo;
-        private System.Windows.Forms.RadioButton btn_1pila;
-        private System.Windows.Forms.RadioButton btn_npilas;
         private System.Windows.Forms.Button btnAyuda;
         private System.Windows.Forms.Button btnInfoNim;
         private System.Windows.Forms.Button btnEmpezar;

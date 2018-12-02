@@ -62,10 +62,10 @@
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(130, 9);
+            this.label1.Location = new System.Drawing.Point(236, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 32);
+            this.label1.Size = new System.Drawing.Size(254, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "PC vs Apodo";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -73,10 +73,10 @@
             // btnRegresar
             // 
             this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(94, 572);
+            this.btnRegresar.Location = new System.Drawing.Point(0, 583);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(119, 43);
+            this.btnRegresar.Size = new System.Drawing.Size(101, 32);
             this.btnRegresar.TabIndex = 4;
             this.btnRegresar.Text = "Regresar";
             this.btnRegresar.UseVisualStyleBackColor = true;
@@ -85,10 +85,10 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(0, 572);
+            this.btnSalir.Location = new System.Drawing.Point(529, 583);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(101, 43);
+            this.btnSalir.Size = new System.Drawing.Size(105, 32);
             this.btnSalir.TabIndex = 5;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@
             // 
             this.panelJuego.BackColor = System.Drawing.SystemColors.Window;
             this.panelJuego.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelJuego.Location = new System.Drawing.Point(262, 45);
+            this.panelJuego.Location = new System.Drawing.Point(265, 58);
             this.panelJuego.Margin = new System.Windows.Forms.Padding(4);
             this.panelJuego.Name = "panelJuego";
             this.panelJuego.Size = new System.Drawing.Size(195, 557);
@@ -113,7 +113,7 @@
             this.label4.Location = new System.Drawing.Point(2, 21);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 17);
+            this.label4.Size = new System.Drawing.Size(173, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Cantidad de piedras : ";
             // 
@@ -124,7 +124,7 @@
             this.label2.Location = new System.Drawing.Point(2, 55);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 17);
+            this.label2.Size = new System.Drawing.Size(212, 20);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cantidad máxima a retirar :";
             // 
@@ -135,7 +135,7 @@
             this.lblCantidadMaximaQuitar.Location = new System.Drawing.Point(180, 55);
             this.lblCantidadMaximaQuitar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCantidadMaximaQuitar.Name = "lblCantidadMaximaQuitar";
-            this.lblCantidadMaximaQuitar.Size = new System.Drawing.Size(16, 17);
+            this.lblCantidadMaximaQuitar.Size = new System.Drawing.Size(18, 20);
             this.lblCantidadMaximaQuitar.TabIndex = 2;
             this.lblCantidadMaximaQuitar.Text = "0";
             // 
@@ -146,7 +146,7 @@
             this.lblCantidadPiedras.Location = new System.Drawing.Point(149, 21);
             this.lblCantidadPiedras.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCantidadPiedras.Name = "lblCantidadPiedras";
-            this.lblCantidadPiedras.Size = new System.Drawing.Size(16, 17);
+            this.lblCantidadPiedras.Size = new System.Drawing.Size(18, 20);
             this.lblCantidadPiedras.TabIndex = 4;
             this.lblCantidadPiedras.Text = "0";
             // 
@@ -196,9 +196,10 @@
             // 
             // txtCantidad
             // 
+            this.txtCantidad.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.txtCantidad.Location = new System.Drawing.Point(146, 352);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(30, 24);
+            this.txtCantidad.Size = new System.Drawing.Size(30, 28);
             this.txtCantidad.TabIndex = 0;
             // 
             // labelInfo
@@ -208,7 +209,7 @@
             this.labelInfo.ForeColor = System.Drawing.SystemColors.Window;
             this.labelInfo.Location = new System.Drawing.Point(3, 64);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(180, 15);
+            this.labelInfo.Size = new System.Drawing.Size(217, 18);
             this.labelInfo.TabIndex = 0;
             this.labelInfo.Text = "En el turno pasado se quitaron: ";
             // 
@@ -217,7 +218,7 @@
             this.labelNumPasado.AutoSize = true;
             this.labelNumPasado.Location = new System.Drawing.Point(71, 487);
             this.labelNumPasado.Name = "labelNumPasado";
-            this.labelNumPasado.Size = new System.Drawing.Size(0, 18);
+            this.labelNumPasado.Size = new System.Drawing.Size(0, 24);
             this.labelNumPasado.TabIndex = 0;
             // 
             // lblCantidadPasada
@@ -227,7 +228,7 @@
             this.lblCantidadPasada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblCantidadPasada.Location = new System.Drawing.Point(181, 64);
             this.lblCantidadPasada.Name = "lblCantidadPasada";
-            this.lblCantidadPasada.Size = new System.Drawing.Size(41, 15);
+            this.lblCantidadPasada.Size = new System.Drawing.Size(46, 18);
             this.lblCantidadPasada.TabIndex = 0;
             this.lblCantidadPasada.Text = "label3";
             this.lblCantidadPasada.Visible = false;
@@ -239,7 +240,7 @@
             this.label3.ForeColor = System.Drawing.SystemColors.Window;
             this.label3.Location = new System.Drawing.Point(1, 10);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(196, 15);
+            this.label3.Size = new System.Drawing.Size(228, 18);
             this.label3.TabIndex = 0;
             this.label3.Text = "¿Gana a quien le quede la última?";
             // 
@@ -250,7 +251,7 @@
             this.lblQuienGana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblQuienGana.Location = new System.Drawing.Point(201, 10);
             this.lblQuienGana.Name = "lblQuienGana";
-            this.lblQuienGana.Size = new System.Drawing.Size(41, 15);
+            this.lblQuienGana.Size = new System.Drawing.Size(46, 18);
             this.lblQuienGana.TabIndex = 0;
             this.lblQuienGana.Text = "label5";
             // 
@@ -261,7 +262,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.Window;
             this.label5.Location = new System.Drawing.Point(2, 37);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(166, 15);
+            this.label5.Size = new System.Drawing.Size(198, 18);
             this.label5.TabIndex = 0;
             this.label5.Text = "Proporción que puede quitar:";
             // 
@@ -272,7 +273,7 @@
             this.lblProporcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.lblProporcion.Location = new System.Drawing.Point(189, 37);
             this.lblProporcion.Name = "lblProporcion";
-            this.lblProporcion.Size = new System.Drawing.Size(41, 15);
+            this.lblProporcion.Size = new System.Drawing.Size(46, 18);
             this.lblProporcion.TabIndex = 0;
             this.lblProporcion.Text = "label6";
             // 
@@ -283,7 +284,7 @@
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.label6.Location = new System.Drawing.Point(168, 37);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(20, 15);
+            this.label6.Size = new System.Drawing.Size(24, 18);
             this.label6.TabIndex = 0;
             this.label6.Text = "1 /";
             // 
@@ -294,18 +295,18 @@
             this.label7.ForeColor = System.Drawing.SystemColors.Window;
             this.label7.Location = new System.Drawing.Point(3, 94);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 15);
+            this.label7.Size = new System.Drawing.Size(144, 18);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Cantidad Final:";
+            this.label7.Text = "Cantidad para ganar:";
             // 
             // lblCantidadFinal
             // 
             this.lblCantidadFinal.AutoSize = true;
             this.lblCantidadFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidadFinal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblCantidadFinal.Location = new System.Drawing.Point(95, 94);
+            this.lblCantidadFinal.Location = new System.Drawing.Point(114, 90);
             this.lblCantidadFinal.Name = "lblCantidadFinal";
-            this.lblCantidadFinal.Size = new System.Drawing.Size(46, 18);
+            this.lblCantidadFinal.Size = new System.Drawing.Size(60, 24);
             this.lblCantidadFinal.TabIndex = 11;
             this.lblCantidadFinal.Text = "label3";
             this.lblCantidadFinal.Visible = false;
@@ -323,18 +324,19 @@
             this.panel1.Controls.Add(this.lblProporcion);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.labelInfo);
+            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(10, 68);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(245, 117);
+            this.panel1.Size = new System.Drawing.Size(248, 137);
             this.panel1.TabIndex = 0;
             // 
             // VentanaJuego
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(468, 615);
+            this.ClientSize = new System.Drawing.Size(633, 616);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelNumPasado);
             this.Controls.Add(this.txtCantidad);
