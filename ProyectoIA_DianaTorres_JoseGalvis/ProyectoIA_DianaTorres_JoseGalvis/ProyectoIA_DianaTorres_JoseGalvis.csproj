@@ -57,6 +57,24 @@
     <Compile Include="Piedra.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VentanaInstrucciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaInstrucciones.Designer.cs">
+      <DependentUpon>VentanaInstrucciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaJuego.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaJuego.Designer.cs">
+      <DependentUpon>VentanaJuego.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VentanaReestricciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentanaReestricciones.Designer.cs">
+      <DependentUpon>VentanaReestricciones.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="InterfazPrincipal.resx">
       <DependentUpon>InterfazPrincipal.cs</DependentUpon>
     </EmbeddedResource>
@@ -69,6 +87,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VentanaInstrucciones.resx">
+      <DependentUpon>VentanaInstrucciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaJuego.resx">
+      <DependentUpon>VentanaJuego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VentanaReestricciones.resx">
+      <DependentUpon>VentanaReestricciones.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

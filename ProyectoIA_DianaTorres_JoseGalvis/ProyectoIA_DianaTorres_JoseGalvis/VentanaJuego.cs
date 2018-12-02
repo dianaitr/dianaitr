@@ -10,20 +10,20 @@ using System.Windows.Forms;
 
 namespace ProyectoIA_DianaTorres_JoseGalvis
 {
-    public partial class InterfazPrincipal : Form
+    public partial class VentanaJuego : Form
     {
         private VentanaReestricciones reestricciones;
-        public InterfazPrincipal()
+        public VentanaJuego(VentanaReestricciones ventanaReestricciones)
         {
             InitializeComponent();
+            reestricciones = ventanaReestricciones;
         }
 
-        private void btnEmpezar_Click(object sender, EventArgs e)
+        private void btnRegresar_Click(object sender, EventArgs e)
         {
-            reestricciones = new VentanaReestricciones(this);
+            
             reestricciones.Visible = true;
             this.Visible = false;
-
         }
     }
 }
