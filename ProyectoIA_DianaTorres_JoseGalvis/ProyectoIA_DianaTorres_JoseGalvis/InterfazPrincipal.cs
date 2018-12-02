@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoIA_DianaTorres_JoseGalvis
 {
-    public partial class Form1 : Form
+    public partial class InterfazPrincipal : Form
     {
-        public Form1()
+        public InterfazPrincipal()
         {
             InitializeComponent();
         }

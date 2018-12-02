@@ -16,7 +16,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new InterfazPrincipal());
         }
     }
 }
