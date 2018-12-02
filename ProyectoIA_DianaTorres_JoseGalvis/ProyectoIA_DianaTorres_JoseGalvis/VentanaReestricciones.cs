@@ -27,9 +27,33 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
 
         private void btnJugar_Click(object sender, EventArgs e)
         {
-            juego=new Juego(Int32.Parse(txtNumPiedras.Text),jugador.getApodo,Int32.Parse(txtProporcionMax.Text),
-                Int32.Parse(txtProporcionMax.Text),
+            bool c1 =false;
+            string s = comboQuienGana.Text;
+            if (s.Equals("Si"))
+            {
+                c1 = true;
+            }
+            else if(s.Equals("No"))
+            {
+                c1 = false;
+            }
 
+            
+            bool c2=false;
+            s = comboQuienEmpieza.Text;
+            if (s.Equals("Yo Empiezo"))
+            {
+                c2 = false;
+            }
+            else if (s.Equals("Empieza PC"))
+            {
+                c2 = true;
+            }
+
+
+
+            juego = new Juego(Int32.Parse(txtNumPiedras.Text), jugador.getApodo(), Int32.Parse(txtProporcionMax.Text),
+                Int32.Parse(txtCantidadParaGanar.Text), c1, c2);
 
 
             ventanaJuego = new VentanaJuego(this,juego);

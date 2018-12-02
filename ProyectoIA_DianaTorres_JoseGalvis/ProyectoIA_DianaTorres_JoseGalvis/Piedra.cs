@@ -9,7 +9,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
    public  class Piedra
     {
 
-        private int posX, posY;
+        public int posX, posY;
         private bool movimiento;
 
 
@@ -19,6 +19,8 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
             posY = y;
             movimiento = false;
         }
+
+       
 
 
         public bool isEstado()

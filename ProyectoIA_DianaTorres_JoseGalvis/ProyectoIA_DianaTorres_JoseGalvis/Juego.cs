@@ -48,14 +48,16 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
 
             jugador = new Jugador(apodoJugador);
             monton = new List<Piedra>();
+            int altura = 540;
             for (int i = 0; i < numPiedras; i++)
             {
-                Piedra p = new Piedra(0, 0);
+                Piedra p = new Piedra(75, altura-=24);
                 monton.Add(p);
             }
             setRestriccion(laRestriccionParaQuitar);
             ganaLaUltimaPiedra = condicionParaGanar;
             setCantidadFinal(laCantidadFinal);
+            EmpiezaPc = empiezaPc;
 
         }
 
@@ -114,6 +116,36 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
         public bool turnoJugador(int cantidad)
         {
             return quitarPiedras(cantidad);
+        }
+
+        public bool recibirDatosTurnoJugador(int x,int y)
+        {
+            bool r = false;
+            bool r1 = false;
+            int contador = 0;
+            for(int i = 0; i < monton.Count && !r; i++)
+            {
+                Piedra p = monton.ElementAt(i);
+                int topeX = 250;
+                int topeY = p.posY + 30;
+                if(x>p.posX && x < topeX)
+                {
+                    if(y>p.posY && y < topeY)
+                    {
+                        contador++;
+                        r = true;
+                        r1 = quitarPiedras(contador);
+                    }
+                }
+            }
+
+
+            return r&&r1;
+        }
+
+        public int cantidadMaximaQuePuedeQuitar()
+        {
+            return monton.Count / restriccionParaQuitar;
         }
 
         private bool quitarPiedras(int cantidad)
