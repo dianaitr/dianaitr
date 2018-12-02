@@ -34,7 +34,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
-            this.panelPila = new System.Windows.Forms.Panel();
+            this.panelJuego = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblCantidadPiedras = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -104,13 +104,13 @@
             this.btnSalir.Text = "salir";
             this.btnSalir.UseVisualStyleBackColor = true;
             // 
-            // panelPila
+            // panelJuego
             // 
-            this.panelPila.Location = new System.Drawing.Point(248, 52);
-            this.panelPila.Margin = new System.Windows.Forms.Padding(4);
-            this.panelPila.Name = "panelPila";
-            this.panelPila.Size = new System.Drawing.Size(479, 550);
-            this.panelPila.TabIndex = 6;
+            this.panelJuego.Location = new System.Drawing.Point(248, 52);
+            this.panelJuego.Margin = new System.Windows.Forms.Padding(4);
+            this.panelJuego.Name = "panelJuego";
+            this.panelJuego.Size = new System.Drawing.Size(479, 550);
+            this.panelJuego.TabIndex = 6;
             // 
             // panel2
             // 
@@ -141,7 +141,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(940, 615);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panelPila);
+            this.Controls.Add(this.panelJuego);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnRegresar);
             this.Controls.Add(this.label1);
@@ -164,7 +164,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnRegresar;
         private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Panel panelPila;
+        private System.Windows.Forms.Panel panelJuego;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblCantidadPiedras;
     }

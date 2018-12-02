@@ -13,7 +13,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
     public partial class VentanaJuego : Form
     {
         private VentanaReestricciones reestricciones;
-        public VentanaJuego(VentanaReestricciones ventanaReestricciones)
+        public VentanaJuego(VentanaReestricciones ventanaReestricciones, Juego juego)
         {
             InitializeComponent();
             reestricciones = ventanaReestricciones;

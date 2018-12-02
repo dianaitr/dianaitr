@@ -30,7 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboApodo = new System.Windows.Forms.ComboBox();
             this.btn_1pila = new System.Windows.Forms.RadioButton();
             this.btn_npilas = new System.Windows.Forms.RadioButton();
             this.btnAyuda = new System.Windows.Forms.Button();
@@ -58,13 +58,13 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "JUEGO DEL NIM";
             // 
-            // comboBox1
+            // comboApodo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(364, 198);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(185, 24);
-            this.comboBox1.TabIndex = 2;
+            this.comboApodo.FormattingEnabled = true;
+            this.comboApodo.Location = new System.Drawing.Point(364, 198);
+            this.comboApodo.Name = "comboApodo";
+            this.comboApodo.Size = new System.Drawing.Size(185, 24);
+            this.comboApodo.TabIndex = 2;
             // 
             // btn_1pila
             // 
@@ -99,6 +99,7 @@
             this.btnAyuda.TabIndex = 5;
             this.btnAyuda.Text = "Ayuda";
             this.btnAyuda.UseVisualStyleBackColor = true;
+            this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
             // btnInfoNim
             // 
@@ -131,7 +132,7 @@
             this.Controls.Add(this.btnAyuda);
             this.Controls.Add(this.btn_npilas);
             this.Controls.Add(this.btn_1pila);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboApodo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "InterfazPrincipal";
@@ -145,7 +146,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboApodo;
         private System.Windows.Forms.RadioButton btn_1pila;
         private System.Windows.Forms.RadioButton btn_npilas;
         private System.Windows.Forms.Button btnAyuda;

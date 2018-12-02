@@ -16,6 +16,9 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
         private int cantidadFinal;
 
         private bool ganaLaUltimaPiedra;
+        private bool empiezaPc;
+
+        public bool EmpiezaPc { get => empiezaPc; set => empiezaPc = value; }
 
         public List<Piedra> getMonton()
         {
@@ -37,7 +40,10 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
             this.jugador = jugador;
         }
 
-        public Juego(int numPiedras, String apodoJugador, int laRestriccionParaQuitar, int laCantidadFinal, bool condicion)
+
+
+        public Juego(int numPiedras, String apodoJugador, int laRestriccionParaQuitar, 
+            int laCantidadFinal, bool condicionParaGanar,bool empiezaPc)
         {
 
             jugador = new Jugador(apodoJugador);
@@ -48,7 +54,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
                 monton.Add(p);
             }
             setRestriccion(laRestriccionParaQuitar);
-            ganaLaUltimaPiedra = condicion;
+            ganaLaUltimaPiedra = condicionParaGanar;
             setCantidadFinal(laCantidadFinal);
 
         }

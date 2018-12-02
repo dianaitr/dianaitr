@@ -15,17 +15,24 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
         private InterfazPrincipal interfazPrincipal;
         private VentanaJuego ventanaJuego;
 
-       
+        private Juego juego;
+        private Jugador jugador;
 
-        public VentanaReestricciones(InterfazPrincipal interfazPrincipal)
+        public VentanaReestricciones(InterfazPrincipal interfazPrincipal, Jugador jugador)
         {
             InitializeComponent();
             this.interfazPrincipal = interfazPrincipal;
+            this.jugador = jugador;
         }
 
         private void btnJugar_Click(object sender, EventArgs e)
         {
-            ventanaJuego = new VentanaJuego(this);
+            juego=new Juego(Int32.Parse(txtNumPiedras.Text),jugador.getApodo,Int32.Parse(txtProporcionMax.Text),
+                Int32.Parse(txtProporcionMax.Text),
+
+
+
+            ventanaJuego = new VentanaJuego(this,juego);
             ventanaJuego.Visible = true;
             this.Visible = false;
         }

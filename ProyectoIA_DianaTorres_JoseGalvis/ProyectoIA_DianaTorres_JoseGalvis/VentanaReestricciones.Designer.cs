@@ -39,6 +39,9 @@
             this.txtCantidadParaGanar = new System.Windows.Forms.TextBox();
             this.btnJugador = new System.Windows.Forms.RadioButton();
             this.btnPc = new System.Windows.Forms.RadioButton();
+            this.label6 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // label1
@@ -105,7 +108,7 @@
             // txtProporcionMax
             // 
             this.txtProporcionMax.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtProporcionMax.Location = new System.Drawing.Point(550, 282);
+            this.txtProporcionMax.Location = new System.Drawing.Point(550, 299);
             this.txtProporcionMax.Name = "txtProporcionMax";
             this.txtProporcionMax.Size = new System.Drawing.Size(100, 28);
             this.txtProporcionMax.TabIndex = 6;
@@ -150,11 +153,48 @@
             this.btnPc.Text = "pc";
             this.btnPc.UseVisualStyleBackColor = true;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(69, 400);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(354, 24);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "¿Gana a quien le quede la última piedra?";
+            // 
+            // radioButton1
+            // 
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton1.Location = new System.Drawing.Point(598, 400);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(53, 28);
+            this.radioButton1.TabIndex = 13;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "no";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            // 
+            // radioButton2
+            // 
+            this.radioButton2.AutoSize = true;
+            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton2.Location = new System.Drawing.Point(511, 400);
+            this.radioButton2.Name = "radioButton2";
+            this.radioButton2.Size = new System.Drawing.Size(44, 28);
+            this.radioButton2.TabIndex = 12;
+            this.radioButton2.TabStop = true;
+            this.radioButton2.Text = "sí";
+            this.radioButton2.UseVisualStyleBackColor = true;
+            // 
             // VentanaReestricciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(730, 589);
+            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnPc);
             this.Controls.Add(this.btnJugador);
             this.Controls.Add(this.txtCantidadParaGanar);
@@ -186,5 +226,8 @@
         private System.Windows.Forms.TextBox txtCantidadParaGanar;
         private System.Windows.Forms.RadioButton btnJugador;
         private System.Windows.Forms.RadioButton btnPc;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButton2;
     }
 }
