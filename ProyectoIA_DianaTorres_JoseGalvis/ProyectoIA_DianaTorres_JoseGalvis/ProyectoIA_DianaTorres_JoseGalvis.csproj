@@ -126,5 +126,8 @@
   <ItemGroup>
     <None Include="Properties\giphy.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\madera.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

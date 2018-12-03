@@ -93,6 +93,16 @@ namespace ProyectoIA_DianaTorres_JoseGalvis.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap madera {
+            get {
+                object obj = ResourceManager.GetObject("madera", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap piedra {
             get {
                 object obj = ResourceManager.GetObject("piedra", resourceCulture);

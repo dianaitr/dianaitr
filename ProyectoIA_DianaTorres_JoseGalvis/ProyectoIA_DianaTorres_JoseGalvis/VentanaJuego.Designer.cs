@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaJuego));
             this.label1 = new System.Windows.Forms.Label();
             this.btnRegresar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
@@ -59,21 +58,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Window;
-            this.label1.Location = new System.Drawing.Point(236, 9);
+            this.label1.Location = new System.Drawing.Point(13, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(254, 39);
+            this.label1.Size = new System.Drawing.Size(292, 45);
             this.label1.TabIndex = 0;
             this.label1.Text = "PC vs Apodo";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnRegresar
             // 
-            this.btnRegresar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegresar.Location = new System.Drawing.Point(0, 583);
+            this.btnRegresar.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegresar.Location = new System.Drawing.Point(6, 555);
             this.btnRegresar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(101, 32);
@@ -84,8 +83,8 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(529, 583);
+            this.btnSalir.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir.Location = new System.Drawing.Point(857, 555);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(105, 32);
@@ -96,12 +95,11 @@
             // 
             // panelJuego
             // 
-            this.panelJuego.BackColor = System.Drawing.SystemColors.Window;
-            this.panelJuego.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelJuego.Location = new System.Drawing.Point(265, 58);
+            this.panelJuego.BackColor = System.Drawing.Color.Transparent;
+            this.panelJuego.Location = new System.Drawing.Point(377, 13);
             this.panelJuego.Margin = new System.Windows.Forms.Padding(4);
             this.panelJuego.Name = "panelJuego";
-            this.panelJuego.Size = new System.Drawing.Size(195, 557);
+            this.panelJuego.Size = new System.Drawing.Size(155, 561);
             this.panelJuego.TabIndex = 6;
             this.panelJuego.Paint += new System.Windows.Forms.PaintEventHandler(this.panelJuego_Paint);
             this.panelJuego.MouseClick += new System.Windows.Forms.MouseEventHandler(this.panelJuego_MouseClick);
@@ -109,72 +107,76 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(2, 21);
+            this.label4.Location = new System.Drawing.Point(27, 13);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(173, 20);
+            this.label4.Size = new System.Drawing.Size(212, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Cantidad de piedras : ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Window;
-            this.label2.Location = new System.Drawing.Point(2, 55);
+            this.label2.Location = new System.Drawing.Point(-4, 75);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 20);
+            this.label2.Size = new System.Drawing.Size(276, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Cantidad máxima a retirar :";
             // 
             // lblCantidadMaximaQuitar
             // 
             this.lblCantidadMaximaQuitar.AutoSize = true;
+            this.lblCantidadMaximaQuitar.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidadMaximaQuitar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblCantidadMaximaQuitar.Location = new System.Drawing.Point(180, 55);
+            this.lblCantidadMaximaQuitar.Location = new System.Drawing.Point(115, 107);
             this.lblCantidadMaximaQuitar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCantidadMaximaQuitar.Name = "lblCantidadMaximaQuitar";
-            this.lblCantidadMaximaQuitar.Size = new System.Drawing.Size(18, 20);
+            this.lblCantidadMaximaQuitar.Size = new System.Drawing.Size(23, 23);
             this.lblCantidadMaximaQuitar.TabIndex = 2;
             this.lblCantidadMaximaQuitar.Text = "0";
             // 
             // lblCantidadPiedras
             // 
             this.lblCantidadPiedras.AutoSize = true;
+            this.lblCantidadPiedras.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidadPiedras.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblCantidadPiedras.Location = new System.Drawing.Point(149, 21);
+            this.lblCantidadPiedras.Location = new System.Drawing.Point(115, 42);
             this.lblCantidadPiedras.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCantidadPiedras.Name = "lblCantidadPiedras";
-            this.lblCantidadPiedras.Size = new System.Drawing.Size(18, 20);
+            this.lblCantidadPiedras.Size = new System.Drawing.Size(23, 23);
             this.lblCantidadPiedras.TabIndex = 4;
             this.lblCantidadPiedras.Text = "0";
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.BackColor = System.Drawing.Color.Brown;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.lblCantidadPiedras);
             this.panel2.Controls.Add(this.lblCantidadMaximaQuitar);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel2.Location = new System.Drawing.Point(10, 212);
+            this.panel2.Location = new System.Drawing.Point(6, 88);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(203, 93);
+            this.panel2.Size = new System.Drawing.Size(278, 152);
             this.panel2.TabIndex = 7;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnTurnoJugador
             // 
-            this.btnTurnoJugador.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnTurnoJugador.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTurnoJugador.BackColor = System.Drawing.Color.Brown;
+            this.btnTurnoJugador.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTurnoJugador.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnTurnoJugador.Location = new System.Drawing.Point(13, 342);
+            this.btnTurnoJugador.Location = new System.Drawing.Point(14, 304);
             this.btnTurnoJugador.Margin = new System.Windows.Forms.Padding(4);
             this.btnTurnoJugador.Name = "btnTurnoJugador";
-            this.btnTurnoJugador.Size = new System.Drawing.Size(126, 43);
+            this.btnTurnoJugador.Size = new System.Drawing.Size(153, 65);
             this.btnTurnoJugador.TabIndex = 8;
             this.btnTurnoJugador.Text = "Quitar Piedras";
             this.btnTurnoJugador.UseVisualStyleBackColor = false;
@@ -182,13 +184,13 @@
             // 
             // btnTurnoPC
             // 
-            this.btnTurnoPC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.btnTurnoPC.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTurnoPC.BackColor = System.Drawing.Color.Brown;
+            this.btnTurnoPC.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTurnoPC.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnTurnoPC.Location = new System.Drawing.Point(13, 425);
+            this.btnTurnoPC.Location = new System.Drawing.Point(14, 377);
             this.btnTurnoPC.Margin = new System.Windows.Forms.Padding(4);
             this.btnTurnoPC.Name = "btnTurnoPC";
-            this.btnTurnoPC.Size = new System.Drawing.Size(126, 43);
+            this.btnTurnoPC.Size = new System.Drawing.Size(153, 65);
             this.btnTurnoPC.TabIndex = 9;
             this.btnTurnoPC.Text = "Turno PC";
             this.btnTurnoPC.UseVisualStyleBackColor = false;
@@ -196,20 +198,23 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.txtCantidad.Location = new System.Drawing.Point(146, 352);
+            this.txtCantidad.BackColor = System.Drawing.Color.White;
+            this.txtCantidad.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCantidad.Location = new System.Drawing.Point(174, 304);
+            this.txtCantidad.Multiline = true;
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(30, 28);
+            this.txtCantidad.Size = new System.Drawing.Size(72, 56);
             this.txtCantidad.TabIndex = 0;
+            this.txtCantidad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // labelInfo
             // 
             this.labelInfo.AutoSize = true;
-            this.labelInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelInfo.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelInfo.ForeColor = System.Drawing.SystemColors.Window;
-            this.labelInfo.Location = new System.Drawing.Point(3, 64);
+            this.labelInfo.Location = new System.Drawing.Point(8, 87);
             this.labelInfo.Name = "labelInfo";
-            this.labelInfo.Size = new System.Drawing.Size(217, 18);
+            this.labelInfo.Size = new System.Drawing.Size(315, 18);
             this.labelInfo.TabIndex = 0;
             this.labelInfo.Text = "En el turno pasado se quitaron: ";
             // 
@@ -224,11 +229,11 @@
             // lblCantidadPasada
             // 
             this.lblCantidadPasada.AutoSize = true;
-            this.lblCantidadPasada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadPasada.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidadPasada.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblCantidadPasada.Location = new System.Drawing.Point(181, 64);
+            this.lblCantidadPasada.Location = new System.Drawing.Point(328, 87);
             this.lblCantidadPasada.Name = "lblCantidadPasada";
-            this.lblCantidadPasada.Size = new System.Drawing.Size(46, 18);
+            this.lblCantidadPasada.Size = new System.Drawing.Size(82, 23);
             this.lblCantidadPasada.TabIndex = 0;
             this.lblCantidadPasada.Text = "label3";
             this.lblCantidadPasada.Visible = false;
@@ -236,84 +241,84 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Window;
-            this.label3.Location = new System.Drawing.Point(1, 10);
+            this.label3.Location = new System.Drawing.Point(3, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(228, 18);
+            this.label3.Size = new System.Drawing.Size(320, 18);
             this.label3.TabIndex = 0;
             this.label3.Text = "¿Gana a quien le quede la última?";
             // 
             // lblQuienGana
             // 
             this.lblQuienGana.AutoSize = true;
-            this.lblQuienGana.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuienGana.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuienGana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblQuienGana.Location = new System.Drawing.Point(201, 10);
+            this.lblQuienGana.Location = new System.Drawing.Point(328, 12);
             this.lblQuienGana.Name = "lblQuienGana";
-            this.lblQuienGana.Size = new System.Drawing.Size(46, 18);
+            this.lblQuienGana.Size = new System.Drawing.Size(82, 23);
             this.lblQuienGana.TabIndex = 0;
             this.lblQuienGana.Text = "label5";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Window;
-            this.label5.Location = new System.Drawing.Point(2, 37);
+            this.label5.Location = new System.Drawing.Point(3, 51);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(198, 18);
+            this.label5.Size = new System.Drawing.Size(288, 18);
             this.label5.TabIndex = 0;
             this.label5.Text = "Proporción que puede quitar:";
             // 
             // lblProporcion
             // 
             this.lblProporcion.AutoSize = true;
-            this.lblProporcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProporcion.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblProporcion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblProporcion.Location = new System.Drawing.Point(189, 37);
+            this.lblProporcion.Location = new System.Drawing.Point(322, 51);
             this.lblProporcion.Name = "lblProporcion";
-            this.lblProporcion.Size = new System.Drawing.Size(46, 18);
+            this.lblProporcion.Size = new System.Drawing.Size(83, 23);
             this.lblProporcion.TabIndex = 0;
             this.lblProporcion.Text = "label6";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label6.Location = new System.Drawing.Point(168, 37);
+            this.label6.Location = new System.Drawing.Point(300, 51);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(24, 18);
+            this.label6.Size = new System.Drawing.Size(29, 23);
             this.label6.TabIndex = 0;
             this.label6.Text = "1 /";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.Window;
-            this.label7.Location = new System.Drawing.Point(3, 94);
+            this.label7.Location = new System.Drawing.Point(3, 120);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(144, 18);
+            this.label7.Size = new System.Drawing.Size(398, 18);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Cantidad para ganar:";
+            this.label7.Text = "Cantidad restante para  ganar o perder:";
             // 
             // lblCantidadFinal
             // 
             this.lblCantidadFinal.AutoSize = true;
-            this.lblCantidadFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCantidadFinal.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCantidadFinal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.lblCantidadFinal.Location = new System.Drawing.Point(114, 90);
+            this.lblCantidadFinal.Location = new System.Drawing.Point(166, 149);
             this.lblCantidadFinal.Name = "lblCantidadFinal";
-            this.lblCantidadFinal.Size = new System.Drawing.Size(60, 24);
+            this.lblCantidadFinal.Size = new System.Drawing.Size(82, 23);
             this.lblCantidadFinal.TabIndex = 11;
             this.lblCantidadFinal.Text = "label3";
             this.lblCantidadFinal.Visible = false;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.BackColor = System.Drawing.Color.Brown;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.lblCantidadFinal);
@@ -324,10 +329,10 @@
             this.panel1.Controls.Add(this.lblProporcion);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.labelInfo);
-            this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(10, 68);
+            this.panel1.Font = new System.Drawing.Font("Perpetua Titling MT", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(556, 9);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(248, 137);
+            this.panel1.Size = new System.Drawing.Size(410, 182);
             this.panel1.TabIndex = 0;
             // 
             // VentanaJuego
@@ -335,8 +340,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(633, 616);
+            this.BackgroundImage = global::ProyectoIA_DianaTorres_JoseGalvis.Properties.Resources.madera;
+            this.ClientSize = new System.Drawing.Size(969, 588);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.labelNumPasado);
             this.Controls.Add(this.txtCantidad);

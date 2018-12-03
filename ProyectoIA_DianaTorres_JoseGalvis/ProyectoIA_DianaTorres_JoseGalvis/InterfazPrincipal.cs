@@ -17,7 +17,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
        
         private Jugador jugador;
 
-        private Boolean unaPila;
+       
         public InterfazPrincipal()
         {
             InitializeComponent();
@@ -29,14 +29,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
         {
 
              jugador = new Jugador(comboApodo.Text);
-            if (btn_1pila.Checked== true)
-            {
-                unaPila = true;
-            }
-            else
-            {
-                unaPila = false;
-            }
+           
 
             reestricciones = new VentanaReestricciones(this,jugador);
             reestricciones.Visible = true;

@@ -48,10 +48,10 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
 
             jugador = new Jugador(apodoJugador);
             monton = new List<Piedra>();
-            int altura = 540;
+            int altura = 500;
             for (int i = 0; i < numPiedras; i++)
             {
-                Piedra p = new Piedra(75, altura-=24);
+                Piedra p = new Piedra(75, altura-=25);
                 monton.Add(p);
             }
             setRestriccion(laRestriccionParaQuitar);

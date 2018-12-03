@@ -54,7 +54,8 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
                 pb.Location = new Point(p.posX, p.posY);
                 pb.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject("piedra");
                 pb.BackColor = Color.Transparent;
-                pb.SizeMode = PictureBoxSizeMode.AutoSize;
+                pb.SizeMode = PictureBoxSizeMode.Zoom;
+                pb.Size=new Size(50, 25);
                 panelJuego.Controls.Add(pb);
                 
             }
