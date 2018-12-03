@@ -21,19 +21,26 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
         public InterfazPrincipal()
         {
             InitializeComponent();
-            instrucciones = new VentanaInstrucciones();
+            instrucciones = new VentanaInstrucciones(this);
             
         }
 
         private void btnEmpezar_Click(object sender, EventArgs e)
         {
+            if (!comboApodo.Text.Equals(""))
+            {
+                jugador = new Jugador(comboApodo.Text);
 
-             jugador = new Jugador(comboApodo.Text);
-           
 
-            reestricciones = new VentanaReestricciones(this,jugador);
-            reestricciones.Visible = true;
-            this.Visible = false;
+                reestricciones = new VentanaReestricciones(this, jugador);
+                reestricciones.Visible = true;
+                this.Visible = false;
+            }
+            else
+            {
+                MessageBox.Show("Ingrese un apodo porfavor.");
+            }
+             
 
         }
 
@@ -42,6 +49,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
 
             instrucciones.Visible = true;
             this.Visible = false;
+
         }
     }
 }

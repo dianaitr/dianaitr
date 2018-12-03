@@ -30,19 +30,18 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboApodo = new System.Windows.Forms.ComboBox();
             this.btnAyuda = new System.Windows.Forms.Button();
-            this.btnInfoNim = new System.Windows.Forms.Button();
             this.btnEmpezar = new System.Windows.Forms.Button();
+            this.comboApodo = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(165, 198);
+            this.label1.Font = new System.Drawing.Font("Perpetua Titling MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(109, 199);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 24);
+            this.label1.Size = new System.Drawing.Size(220, 23);
             this.label1.TabIndex = 0;
             this.label1.Text = "¿Cúal es tu apodo?";
             // 
@@ -56,18 +55,10 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "JUEGO DEL NIM";
             // 
-            // comboApodo
-            // 
-            this.comboApodo.FormattingEnabled = true;
-            this.comboApodo.Location = new System.Drawing.Point(364, 198);
-            this.comboApodo.Name = "comboApodo";
-            this.comboApodo.Size = new System.Drawing.Size(185, 24);
-            this.comboApodo.TabIndex = 2;
-            // 
             // btnAyuda
             // 
-            this.btnAyuda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAyuda.Location = new System.Drawing.Point(308, 446);
+            this.btnAyuda.Font = new System.Drawing.Font("Perpetua Titling MT", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAyuda.Location = new System.Drawing.Point(303, 431);
             this.btnAyuda.Name = "btnAyuda";
             this.btnAyuda.Size = new System.Drawing.Size(123, 34);
             this.btnAyuda.TabIndex = 5;
@@ -75,36 +66,33 @@
             this.btnAyuda.UseVisualStyleBackColor = true;
             this.btnAyuda.Click += new System.EventHandler(this.btnAyuda_Click);
             // 
-            // btnInfoNim
-            // 
-            this.btnInfoNim.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInfoNim.Location = new System.Drawing.Point(294, 497);
-            this.btnInfoNim.Name = "btnInfoNim";
-            this.btnInfoNim.Size = new System.Drawing.Size(154, 56);
-            this.btnInfoNim.TabIndex = 6;
-            this.btnInfoNim.Text = "Acerca del NIM";
-            this.btnInfoNim.UseVisualStyleBackColor = true;
-            // 
             // btnEmpezar
             // 
-            this.btnEmpezar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpezar.Location = new System.Drawing.Point(299, 330);
+            this.btnEmpezar.Font = new System.Drawing.Font("Perpetua Titling MT", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEmpezar.Location = new System.Drawing.Point(279, 297);
             this.btnEmpezar.Name = "btnEmpezar";
-            this.btnEmpezar.Size = new System.Drawing.Size(154, 58);
+            this.btnEmpezar.Size = new System.Drawing.Size(180, 79);
             this.btnEmpezar.TabIndex = 7;
-            this.btnEmpezar.Text = "¡EMPEZAR!";
+            this.btnEmpezar.Text = "¡ EMPEZAR !";
             this.btnEmpezar.UseVisualStyleBackColor = true;
             this.btnEmpezar.Click += new System.EventHandler(this.btnEmpezar_Click);
+            // 
+            // comboApodo
+            // 
+            this.comboApodo.Location = new System.Drawing.Point(358, 202);
+            this.comboApodo.Name = "comboApodo";
+            this.comboApodo.Size = new System.Drawing.Size(180, 22);
+            this.comboApodo.TabIndex = 8;
             // 
             // InterfazPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(730, 589);
-            this.Controls.Add(this.btnEmpezar);
-            this.Controls.Add(this.btnInfoNim);
-            this.Controls.Add(this.btnAyuda);
+            this.BackColor = System.Drawing.Color.Brown;
+            this.ClientSize = new System.Drawing.Size(726, 523);
             this.Controls.Add(this.comboApodo);
+            this.Controls.Add(this.btnEmpezar);
+            this.Controls.Add(this.btnAyuda);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "InterfazPrincipal";
@@ -118,10 +106,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboApodo;
         private System.Windows.Forms.Button btnAyuda;
-        private System.Windows.Forms.Button btnInfoNim;
         private System.Windows.Forms.Button btnEmpezar;
+        private System.Windows.Forms.TextBox comboApodo;
     }
 }
 

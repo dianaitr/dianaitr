@@ -12,9 +12,18 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
 {
     public partial class VentanaInstrucciones : Form
     {
-        public VentanaInstrucciones()
+        InterfazPrincipal principal;
+        public VentanaInstrucciones(InterfazPrincipal principal)
         {
             InitializeComponent();
+            this.principal = principal;
+
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            principal.Visible = true;
+            this.Visible = false;
         }
     }
 }

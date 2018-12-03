@@ -182,7 +182,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
                 MessageBox.Show("¡HAS PERDIDO!");
                 gifPerdiste.Visible = true;
                 sound.Stop();
-                sound.SoundLocation = "C:/Users/Windows/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/perdiste.wav";
+                sound.SoundLocation = "C:/Users/diana/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/perdiste.wav";
                 sound.Play();
 
 
@@ -195,7 +195,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
                 MessageBox.Show("¡FELICIDADES HAS GANADO!");
                 lblHasGanado.Visible = true;
                 sound.Stop();
-                sound.SoundLocation = "C:/Users/Windows/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/ganaste.wav";
+                sound.SoundLocation = "C:/Users/diana/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/ganaste.wav";
                 sound.Play();
                 gifTrofeo.Visible = true;
 
@@ -211,7 +211,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
 
 
                 gifTrofeo.Visible = true;
-                sound.SoundLocation = "C:/Users/Windows/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/ganaste.wav";
+                sound.SoundLocation = "C:/Users/diana/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/ganaste.wav";
                 sound.Play();
             }
             else if(juego.getMonton().Count == juego.getCantidadFinal() && !juego.isGanaLaUltimaPiedra()
@@ -222,7 +222,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
                 panelJuego.Controls.Clear();
                 MessageBox.Show("¡HAS PERDIDO!");
                 sound.Stop();
-                sound.SoundLocation = "C:/Users/Windows/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/perdiste.wav";
+                sound.SoundLocation = "C:/Users/diana/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/perdiste.wav";
                 sound.Play();
                 gifPerdiste.Visible = true;
             }
@@ -234,7 +234,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
         private void VentanaJuego_Load(object sender, EventArgs e)
         {
             sound = new SoundPlayer();
-            sound.SoundLocation = "C:/Users/Windows/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/soundtrack.wav";
+            sound.SoundLocation = "C:/Users/diana/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/soundtrack.wav";
             sound.Play();
         }
     }
