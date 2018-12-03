@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace ProyectoIA_DianaTorres_JoseGalvis
 {
@@ -14,6 +15,10 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
     {
         private VentanaReestricciones reestricciones;
         private Juego juego;
+
+        private bool turnoEsMio;
+
+        private SoundPlayer sound;
         
         public VentanaJuego(VentanaReestricciones ventanaReestricciones, Juego juegi)
         {
@@ -28,10 +33,12 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
             if (juego.EmpiezaPc)
             {
                 btnTurnoJugador.Enabled = false;
+                btnTurnoJugador.BackColor = Color.DarkGray;
             }
             else
             {
                 btnTurnoPC.Enabled = false;
+                btnTurnoPC.BackColor = Color.DarkGray;
             }
             lblProporcion.Text = juego.getRestriccion()+"";
             if (juego.isGanaLaUltimaPiedra())
@@ -106,27 +113,28 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
             lblCantidadPasada.Text = dif + " piedras";
             pintarPiedras();
             btnTurnoPC.Enabled = false;
+            btnTurnoPC.BackColor = Color.DarkGray;
             btnTurnoJugador.Enabled = true;
+            btnTurnoJugador.BackColor = Color.Brown;
             lblCantidadPasada.Visible = true;
             lblCantidadMaximaQuitar.Text = juego.cantidadMaximaQuePuedeQuitar()+"";
             lblCantidadPiedras.Text = juego.getMonton().Count + "";
-            bool fin = verificarFinal();
-            if (fin)
-            {
-
-            }
+            turnoEsMio = true;
+            verificarFinal();
+            
 
 
         }
 
         private void btnTurnoJugador_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 int c = Int32.Parse(txtCantidad.Text);
                 int n1 = juego.getMonton().Count;
                 bool cond = juego.turnoJugador(c);
-                if (!cond)
+                if (!cond || c==0)
                 {
                     MessageBox.Show("Cantidad inválida");
                 }
@@ -139,16 +147,19 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
                     lblCantidadPasada.Visible = true;
                     pintarPiedras();
                     btnTurnoPC.Enabled = true;
+                    btnTurnoPC.BackColor = Color.Brown;
+                    btnTurnoJugador.BackColor = Color.DarkGray;
                     btnTurnoJugador.Enabled = false;
                     lblCantidadMaximaQuitar.Text = juego.cantidadMaximaQuePuedeQuitar() + "";
                     lblCantidadPiedras.Text = juego.getMonton().Count + "";
+                    turnoEsMio = false;
+                    verificarFinal();
+                    
 
                 }
-                bool fin = verificarFinal();
-                if (fin)
-                {
 
-                }
+                
+                
             }
             catch 
             {
@@ -159,15 +170,72 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
             
         }
 
-        private bool verificarFinal()
+        private void verificarFinal()
         {
-            if (juego.getMonton().Count == juego.getCantidadFinal())
+            
+            
+            if (juego.getMonton().Count == juego.getCantidadFinal() && juego.isGanaLaUltimaPiedra() 
+                && !turnoEsMio)
             {
+                sound.Stop();
                 panelJuego.Controls.Clear();
                 MessageBox.Show("¡HAS PERDIDO!");
-                return true;
+                gifPerdiste.Visible = true;
+                sound.Stop();
+                sound.SoundLocation = "C:/Users/Windows/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/perdiste.wav";
+                sound.Play();
+
+
             }
-            return false;
+            else if (juego.getMonton().Count == juego.getCantidadFinal() && juego.isGanaLaUltimaPiedra()
+                && turnoEsMio)
+            {
+                
+                panelJuego.Controls.Clear();
+                MessageBox.Show("¡FELICIDADES HAS GANADO!");
+                lblHasGanado.Visible = true;
+                sound.Stop();
+                sound.SoundLocation = "C:/Users/Windows/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/ganaste.wav";
+                sound.Play();
+                gifTrofeo.Visible = true;
+
+            }else if (juego.getMonton().Count == juego.getCantidadFinal() && !juego.isGanaLaUltimaPiedra()
+                && !turnoEsMio) 
+            {
+                sound.Stop();
+                panelJuego.Controls.Clear();
+                sound.Stop();
+                
+                MessageBox.Show("¡FELICIDADES HAS GANADO!");
+                lblHasGanado.Visible = true;
+
+
+                gifTrofeo.Visible = true;
+                sound.SoundLocation = "C:/Users/Windows/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/ganaste.wav";
+                sound.Play();
+            }
+            else if(juego.getMonton().Count == juego.getCantidadFinal() && !juego.isGanaLaUltimaPiedra()
+                && turnoEsMio)
+            {
+                sound.Stop();
+
+                panelJuego.Controls.Clear();
+                MessageBox.Show("¡HAS PERDIDO!");
+                sound.Stop();
+                sound.SoundLocation = "C:/Users/Windows/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/perdiste.wav";
+                sound.Play();
+                gifPerdiste.Visible = true;
+            }
+
+
+            
+        }
+
+        private void VentanaJuego_Load(object sender, EventArgs e)
+        {
+            sound = new SoundPlayer();
+            sound.SoundLocation = "C:/Users/Windows/source/repos/dianaitr/ProyectoIA_DianaTorres_JoseGalvis/ProyectoIA_DianaTorres_JoseGalvis/Properties/soundtrack.wav";
+            sound.Play();
         }
     }
 }

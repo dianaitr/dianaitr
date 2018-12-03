@@ -51,7 +51,7 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
             int altura = 500;
             for (int i = 0; i < numPiedras; i++)
             {
-                Piedra p = new Piedra(75, altura-=25);
+                Piedra p = new Piedra(75, altura-=22);
                 monton.Add(p);
             }
             setRestriccion(laRestriccionParaQuitar);
@@ -103,8 +103,15 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
             }
 
             int cantidad = n - actual;
-
-            cond = quitarPiedras(cantidad);
+            if (cantidad != 0)
+            {
+                cond = quitarPiedras(cantidad);
+            }
+            else
+            {
+                cond = false;
+            }
+            
 
             while (!cond)
             {

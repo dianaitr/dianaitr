@@ -52,13 +52,33 @@ namespace ProyectoIA_DianaTorres_JoseGalvis
 
 
 
-            juego = new Juego(Int32.Parse(txtNumPiedras.Text), jugador.getApodo(), Int32.Parse(txtProporcionMax.Text),
-                Int32.Parse(txtCantidadParaGanar.Text), c1, c2);
+
+            try
+            {
+                int propMax = Int32.Parse(txtProporcionMax.Text);
+                int cant = Int32.Parse(txtCantidadParaGanar.Text);
+                if (cant < propMax - 1)
+                {
+                    MessageBox.Show("La cantidad para ganar o perder debe ser mayor o igual a n-1, siendo n=el denominador de la proporción máxima que se puede retirar.");
+                }
+                else
+                {
+                    juego = new Juego(Int32.Parse(txtNumPiedras.Text), jugador.getApodo(), Int32.Parse(txtProporcionMax.Text),
+                    Int32.Parse(txtCantidadParaGanar.Text), c1, c2);
+                    ventanaJuego = new VentanaJuego(this, juego);
+                    ventanaJuego.Visible = true;
+                    this.Visible = false;
+                }
+                
+            }
+            catch
+            {
+                MessageBox.Show("Datos inválidos");
+            }
+            
 
 
-            ventanaJuego = new VentanaJuego(this,juego);
-            ventanaJuego.Visible = true;
-            this.Visible = false;
+            
         }
     }
 }

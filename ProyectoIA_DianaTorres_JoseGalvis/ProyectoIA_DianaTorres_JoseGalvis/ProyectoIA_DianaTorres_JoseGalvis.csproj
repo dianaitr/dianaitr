@@ -118,16 +118,13 @@
     <None Include="Properties\piedra.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\fondo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\fuego-imagen-animada-0419.gif" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Properties\giphy.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Properties\madera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\GameOver.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\trophy.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
